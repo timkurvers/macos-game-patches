@@ -51,7 +51,7 @@ Game running on macOS through CrossOver 23.7.1 + D3DMetal:
 ## Instructions
 
 1. Install Steam and Sea of Thieves in a (fresh) CrossOver 23.7.1 bottle
-2. Download the file below as `patch-sot.sh`
+2. Download the `patch-sot.sh` file
 3. Make it executable: `chmod +x patch-sot.sh`
 4. Patch `libcef` which is used for the Xbox sign-in window:
 
