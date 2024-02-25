@@ -21,17 +21,18 @@ fi
 # to a 3.2 core profile, so use that space to instead set WGL_CONTEXT_FLAGS_ARB (0x2094) to 2 piggybacking on
 # the `rdi` register, which happens to contain `0000000015010052` at this point.
 #
+
 hash=$(md5 -q "$1")
 
 if [ "$hash" == "769b1016f945167c48c6837505e37748" ]; then
   printf "\x94\x20" | dd of="$1" bs=1 seek=59224 conv=notrunc status=none
   printf "\x7D" | dd of="$1" bs=1 seek=59230 conv=notrunc status=none
-  echo "Successfully patched tomb123.exe"
+  echo "Successfully patched $1"
 
 elif [ "$hash" == "a3757251c91d12c15d0ba98e927a27e4" ]; then
   printf "\x26\x91" | dd of="$1" bs=1 seek=59224 conv=notrunc status=none
   printf "\x75" | dd of="$1" bs=1 seek=59230 conv=notrunc status=none
-  echo "Restored tomb123.exe"
+  echo "Restored $1"
 
 else
   echo "Found an unknown version of tomb123.exe"
