@@ -22,12 +22,12 @@ if [ "$1" == "libcef" ] && [ -n "$2" ]; then
   if [ "$hash" == "2af0cde7753241fe1b5ba5560cfd4e89" ]; then
     printf "\x75" | dd of="$libcef" bs=1 seek=13946034 conv=notrunc status=none
     printf "\x74" | dd of="$libcef" bs=1 seek=37003958 conv=notrunc status=none
-    echo "Successfully patched libcef.dll (fixes Xbox sign-in window when using WineD3D)"
+    echo "Successfully patched $libcef (fixes Xbox sign-in window when using WineD3D)"
 
   elif [ "$hash" == "75b606b6eddbf18b0f6e2fbd0be75fba" ]; then
     printf "\x74" | dd of="$libcef" bs=1 seek=13946034 conv=notrunc status=none
     printf "\x75" | dd of="$libcef" bs=1 seek=37003958 conv=notrunc status=none
-    echo "Restored/unpatched libcef.dll (used by Xbox sign-in window)"
+    echo "Restored $libcef (used by Xbox sign-in window)"
 
   else
     echo "Found an unknown version of libcef.dll"
@@ -61,12 +61,12 @@ elif [ "$1" == "cx" ]; then
   if [ "$hash" == "b59cb59ea367ec0344222a7f57531c5c" ]; then
     printf "\x75" | dd of="$advapi32" bs=1 seek=45498 conv=notrunc status=none
     printf "\x75" | dd of="$advapi32" bs=1 seek=45772 conv=notrunc status=none
-    echo "Successfully patched advapi32.dll (CrossOver / Wine credential bug)"
+    echo "Successfully patched $advapi32 (CrossOver / Wine credential bug)"
 
   elif [ "$hash" == "3e4f6a851e5444a49b6b5c7dda7f8a87" ]; then
     printf "\x74" | dd of="$advapi32" bs=1 seek=45498 conv=notrunc status=none
     printf "\x74" | dd of="$advapi32" bs=1 seek=45772 conv=notrunc status=none
-    echo "Restored/unpatched advapi32.dll (CrossOver / Wine credential bug)"
+    echo "Restored $advapi32 (CrossOver / Wine credential bug)"
 
   else
     echo "Found an unknown version of advapi32.dll"
@@ -75,7 +75,7 @@ elif [ "$1" == "cx" ]; then
 
 else
   echo 'Usage:'
-  echo '  ./sot-patch.sh libcef <path/to/Sea of Thieves>'
-  echo '  ./sot-patch.sh cx [optional: <path/to/Crossover.app>]'
+  echo '  ./patch-sot.sh libcef <path/to/Sea of Thieves>'
+  echo '  ./patch-sot.sh cx [optional: <path/to/Crossover.app>]'
   exit 1
 fi

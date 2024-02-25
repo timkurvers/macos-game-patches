@@ -51,12 +51,12 @@ Game running on macOS through CrossOver 23.7.1 + D3DMetal:
 ## Instructions
 
 1. Install Steam and Sea of Thieves in a (fresh) CrossOver 23.7.1 bottle
-2. Download the file below as `sot-patch.sh`
-3. Make it executable: `chmod +x sot-patch.sh`
+2. Download the file below as `patch-sot.sh`
+3. Make it executable: `chmod +x patch-sot.sh`
 4. Patch `libcef` which is used for the Xbox sign-in window:
 
    ```shell
-   ./sot-patch.sh libcef <path/to/Sea of Thieves>
+   ./patch-sot.sh libcef <path/to/Sea of Thieves>
    ```
 
    Note: If you get the message `Found an unknown version of libcef.dll` then the script most likely needs updating. Sea of Thieves seems to alter `libcef.dll` slightly with each release.
@@ -64,13 +64,13 @@ Game running on macOS through CrossOver 23.7.1 + D3DMetal:
 5. Patch CrossOver's `advapi32` which contains seemingly bugged credential management:
 
    ```shell
-   ./sot-patch.sh cx
+   ./patch-sot.sh cx
    ```
 
    If you have installed `CrossOver.app` in a non-default location, pass it as an argument:
 
    ```shell
-   ./sot-patch.sh cx <path/to/Crossover.app>
+   ./patch-sot.sh cx <path/to/Crossover.app>
    ```
 
 6. **Disable** both DXVK and D3DMetal for your CrossOver bottle temporarily
