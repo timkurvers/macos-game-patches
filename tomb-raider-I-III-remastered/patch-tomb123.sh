@@ -3,7 +3,7 @@
 set -e
 
 if [ ! -f "$1" ]; then
-  echo 'Usage: ./tomb123-patch.sh <path/to/tomb123.exe>'
+  echo 'Usage: ./patch-tomb123.sh <path/to/tomb123.exe>'
   exit 1
 fi
 
