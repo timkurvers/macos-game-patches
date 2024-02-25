@@ -17,6 +17,6 @@ Game running on macOS through CrossOver 23.7 + D3DMetal:
 
 ## Instructions
 
-1. Download the file below as `patch-jusant.sh`
+1. Download the `patch-jusant.sh` file
 2. Make it executable: `chmod +x patch-jusant.sh`
 3. Run it: `./patch-jusant.sh <path/to/ASC-Win64-Shipping.exe>`
