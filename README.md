@@ -23,6 +23,8 @@ Ultimately, the hope is for this repository to be completely empty, but here we 
 > for this repository. The same goes for usage of virtualization software such as Parallels or VMware Fusion.
 >
 
+## Available Patches
+
 | Game                           | Why?                                      |
 | ------------------------------ | ----------------------------------------- |
 | [Jusant]                       | Incompatible DX12 feature detection       |
