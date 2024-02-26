@@ -13,7 +13,7 @@ The below script patches the binary, seemingly resulted in a playable game (limi
 
 Game running on macOS through CrossOver 23.7 + D3DMetal:
 
-<img width="768" alt="jusant-macos" src="https://gist.github.com/assets/378235/f5ef58d2-e1c3-431a-a04c-1cbd3c67589f">
+<img width="768" alt="jusant-macos" src="https://github.com/timkurvers/macos-game-patches/assets/378235/dddd284f-b4f1-4fd3-b8e1-34d4ee0ab18c">
 
 ## Instructions
 

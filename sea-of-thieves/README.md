@@ -34,7 +34,7 @@ Things remaining to test:
 
 Game running on macOS through CrossOver 23.7.1 + D3DMetal:
 
-<img width="768" alt="sea-of-thieves-macos" src="https://gist.github.com/assets/378235/ad3ce28d-aa35-4a7b-b462-bf93d0617312">
+<img width="768" alt="sea-of-thieves-macos" src="https://github.com/timkurvers/macos-game-patches/assets/378235/9d093925-06bb-4982-9aa1-b803606a1c8a">
 
 <sup>~60fps @ 1440p with low quality settings on an M1 Pro</sup>
 
