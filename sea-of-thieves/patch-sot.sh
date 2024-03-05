@@ -68,6 +68,17 @@ elif [ "$1" == "cx" ]; then
     printf "\x74" | dd of="$advapi32" bs=1 seek=45772 conv=notrunc status=none
     echo "Restored $advapi32 (CrossOver / Wine credential bug)"
 
+  # CrossOver 24.0.0 only
+  elif [ "$hash" == "136bd9be7952ad241d22beca92c18fa4" ]; then
+    printf "\x75" | dd of="$advapi32" bs=1 seek=$((0xB092)) conv=notrunc status=none
+    printf "\x75" | dd of="$advapi32" bs=1 seek=$((0xB161)) conv=notrunc status=none
+    echo "Successfully patched $advapi32 (CrossOver / Wine credential bug)"
+
+  elif [ "$hash" == "118a2b744b10cda352e701b392324f98" ]; then
+    printf "\x74" | dd of="$advapi32" bs=1 seek=$((0xB092)) conv=notrunc status=none
+    printf "\x74" | dd of="$advapi32" bs=1 seek=$((0xB161)) conv=notrunc status=none
+    echo "Restored $advapi32 (CrossOver / Wine credential bug)"
+
   else
     echo "Found an unknown version of advapi32.dll"
     exit 1
