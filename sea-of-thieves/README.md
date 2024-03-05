@@ -42,11 +42,11 @@ Game running on macOS through CrossOver 23.7.1 + D3DMetal:
 
 - Sea of Thieves (Steam version only)
 - Microsoft account (this is a multiplayer game after all)
-- CrossOver 23.7.1
+- CrossOver 23.7.1 or CrossOver 24.0.0
 
 > [!NOTE]
 >
-> The authentication patch **does not yet** recognize CrossOver 24 beta 1. The script will need to be adjusted.
+> Enabling D3DMetal for Sea of Thieves under CrossOver 24.0.0 seems to crash the game. Will need some investigating.
 
 ## Instructions
 
