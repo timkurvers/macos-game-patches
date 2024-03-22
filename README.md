@@ -25,11 +25,11 @@ Ultimately, the hope is for this repository to be completely empty, but here we 
 
 ## Available Patches
 
-| Game                           | Why?                                      |
-| ------------------------------ | ----------------------------------------- |
-| [Jusant]                       | Incompatible DX12 feature detection       |
-| [Sea of Thieves]               | Xbox Live + game authentication issues    |
-| [Tomb Raider I-III Remastered] | macOS OpenGL incompatibility              |
+| Game                               | Why?                                      | Note
+| ---------------------------------- | ----------------------------------------- | ------------------------- |
+| [Jusant]                           | Incompatible DX12 feature detection       |
+| [Sea of Thieves]                   | Xbox Live + game authentication issues    |
+| ~~[Tomb Raider I-III Remastered]~~ | macOS OpenGL incompatibility              | Fixed in CrossOver 24.0.1
 
 ## Tools & Techniques
 
