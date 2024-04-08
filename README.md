@@ -28,7 +28,7 @@ Ultimately, the hope is for this repository to be completely empty, but here we 
 | Game                               | Why?                                      | Note
 | ---------------------------------- | ----------------------------------------- | ------------------------- |
 | [Jusant]                           | Incompatible DX12 feature detection       |
-| [Sea of Thieves]                   | Xbox Live + game authentication issues    |
+| ~~[Sea of Thieves]~~               | Xbox Live + game authentication issues    | [Easy Anti-Cheat] prevents game from running
 | ~~[Tomb Raider I-III Remastered]~~ | macOS OpenGL incompatibility              | Fixed in CrossOver 24.0.1
 
 ## Tools & Techniques
@@ -45,6 +45,7 @@ Ultimately, the hope is for this repository to be completely empty, but here we 
 - Obfuscated game binaries:
   - Bridging `WineDbg`, `gdb` and `lldb` to dump memory (example to follow at a later date)
 
+[Easy Anti-Cheat]: https://www.seaofthieves.com/release-notes/2.10.2
 [Jusant]: jusant
 [Sea of Thieves]: sea-of-thieves
 [Tomb Raider I-III Remastered]: tomb-raider-I-III-remastered
