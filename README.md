@@ -30,6 +30,7 @@ Ultimately, the hope is for this repository to be completely empty, but here we 
 | [Jusant]                           | Incompatible DX12 feature detection       |
 | ~~[Sea of Thieves]~~               | Xbox Live + game authentication issues    | [Easy Anti-Cheat] prevents game from running
 | ~~[Tomb Raider I-III Remastered]~~ | macOS OpenGL incompatibility              | Fixed in CrossOver 24.0.1
+|[Judgement]                         | Missing Rosetta 2 feature bits            |
 
 ## Tools & Techniques
 
@@ -49,3 +50,4 @@ Ultimately, the hope is for this repository to be completely empty, but here we 
 [Jusant]: jusant
 [Sea of Thieves]: sea-of-thieves
 [Tomb Raider I-III Remastered]: tomb-raider-I-III-remastered
+[Judgement]: https://store.steampowered.com/agecheck/app/2058180/
