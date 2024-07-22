@@ -73,6 +73,9 @@ Game running on macOS through CrossOver 23.7.1 + D3DMetal:
    ./patch-sot.sh cx <path/to/Crossover.app>
    ```
 
+   If this fails with `Operation not permitted` temporarily grant Terminal full disk access under System Settings >
+   Privacy & Security > Full Disk Access.
+
 6. **Disable** both DXVK and D3DMetal for your CrossOver bottle temporarily
 7. Restart the bottle / CrossOver
 8. Boot Steam, launch Sea of Thieves and sign in
